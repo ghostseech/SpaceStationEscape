@@ -28,11 +28,9 @@ public class IntroScreen extends Screen {
     public void init() {
         uiProcessor = new UiProcessor();
         introUi = new Vector<UiElement>();
-        button1 = new UiButton(200.0f, 300.0f, 500.0f, 300.0f, "ASFdFSFShtgKL", new Color(0.0f, 1.0f, 1.0f, 1.0f), new Color(1.0f, 0.0f, 1.0f, 1.0f), FontManager.mainFont);
-        introUi.add(button1);
 
         uiProcessor.setUi(introUi);
-        mainTimer = new Timer(14.0f);
+        mainTimer = new Timer(3.0f);
         TimerManager.addTimer(mainTimer);
         cam = new OrthographicCamera();
         cam.setToOrtho(true, 1920, 1080);

@@ -38,7 +38,6 @@ public class UiButton extends UiElement {
         if(wasPressed) batch.draw(texture_pressed, x, y, width, height);
         else batch.draw(texture, x, y, width, height);
         font.setColor(textColor);
-
         float translateY = height / 2 - font.getCapHeight()/2;
         float translateX = width / 2 - text.length() * font.getCapHeight() / 2 / 1.4f;
         font.draw(batch, text, x + translateX, y + translateY);

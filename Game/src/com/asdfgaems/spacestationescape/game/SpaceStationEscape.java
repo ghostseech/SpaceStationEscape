@@ -14,7 +14,7 @@ public class SpaceStationEscape extends ApplicationAdapter {
         screenManager.activateScreen(ScreenManager.INTRO_SCREEN);
     }
     public void render() {
-        Gdx.gl.glClearColor(0.1f, 0.5f, 0.4f, 1.0f);
+        Gdx.gl.glClearColor(0.05f, 0.05f, 0.1f, 1.0f);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
         InputHandler.update();
